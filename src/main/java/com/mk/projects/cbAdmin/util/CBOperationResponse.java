@@ -1,4 +1,4 @@
-package com.mk.projects.cbAdmin;
+package com.mk.projects.cbAdmin.util;
 
 public class CBOperationResponse {
 	private boolean successful;

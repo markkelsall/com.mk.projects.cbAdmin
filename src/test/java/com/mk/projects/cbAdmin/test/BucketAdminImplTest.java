@@ -4,11 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.mk.projects.cbAdmin.BucketAdmin;
-import com.mk.projects.cbAdmin.BucketAdminImpl;
-import com.mk.projects.cbAdmin.CBOperationResponse;
+import com.mk.projects.cbAdmin.impl.BucketAdminImpl;
+import com.mk.projects.cbAdmin.util.CBOperationResponse;
 
-public class Test {
-	public static final Logger logger = LogManager.getLogger(Test.class);
+public class BucketAdminImplTest {
+	public static final Logger logger = LogManager.getLogger(BucketAdminImplTest.class);
 	
 	public static void main(String[] args) {
 		logger.debug("entering");

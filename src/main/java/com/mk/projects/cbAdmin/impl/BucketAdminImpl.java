@@ -1,4 +1,4 @@
-package com.mk.projects.cbAdmin;
+package com.mk.projects.cbAdmin.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,10 +10,12 @@ import com.couchbase.client.java.cluster.ClusterManager;
 import com.couchbase.client.java.cluster.DefaultBucketSettings;
 import com.couchbase.client.java.cluster.DefaultBucketSettings.Builder;
 import com.couchbase.client.java.error.BucketAlreadyExistsException;
+import com.mk.projects.cbAdmin.BucketAdmin;
+import com.mk.projects.cbAdmin.util.CBOperationResponse;
 
 public class BucketAdminImpl implements BucketAdmin {
 
-	public static final Logger logger = LogManager.getLogger(BucketAdminImpl.class);
+	private static final Logger logger = LogManager.getLogger(BucketAdminImpl.class);
 	
 	private ClusterManager clusterManager = null;
 	private final String ADMIN_USERNAME = "Administrator";
